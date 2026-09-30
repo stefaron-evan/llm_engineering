@@ -57,4 +57,200 @@ CSS = """
   justify-content: center;
   align-items: center;
 }
+
+.workout-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* =========================
+   DAY CARD
+========================= */
+
+.workout-day {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   DAY HEADER
+========================= */
+
+.day-header {
+    padding: 16px 20px;
+
+    background: #f7f7f7;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    display: flex;
+    align-items: center;
+}
+
+.day-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: #777;
+}
+
+.day-title {
+    margin-top: 3px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.workout-table {
+    width: 100%;
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+    font-size: 13px;
+}
+
+.workout-table th {
+    padding: 12px 14px;
+
+    text-align: left;
+
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #777;
+
+    background: #fafafa;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.workout-table td {
+    padding: 14px;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #eeeeee;
+
+    line-height: 1.5;
+}
+
+.workout-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.workout-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* =========================
+   BLOCK
+========================= */
+
+.block-badge {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    background: #f1f1f1;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   EXERCISE
+========================= */
+
+.exercise-name {
+    min-width: 180px;
+
+    font-weight: 600;
+    color: #222;
+}
+
+
+/* =========================
+   SETS / REPS
+========================= */
+
+.sets,
+.reps {
+    min-width: 60px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   REST
+========================= */
+
+.rest {
+    min-width: 90px;
+
+    white-space: nowrap;
+
+    color: #555;
+}
+
+
+/* =========================
+   NOTES
+========================= */
+
+.notes {
+    min-width: 250px;
+
+    color: #666;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .day-header {
+        padding: 14px;
+    }
+
+    .day-title {
+        font-size: 17px;
+    }
+
+    .workout-table {
+        min-width: 800px;
+    }
+
+}
 """
